@@ -1,0 +1,74 @@
+{
+    "CLIENT":"EXTENSO",
+    "CBS":"FLEXCUBE",
+    "PYTHON_LOCATION":"/data/airflow/airflow_venv/bin/python",
+    "PENTAHO_LOCATION":"/data/pdi/data-integration",
+    "AIRFLOW_HOME":"/root/airflow",
+    "JAVA_HOME":"/usr/bin/java",
+    
+    "SQL_SCRIPT_LOCATION":"/root/airflow/dags/sql_files",
+
+    "MONITOR_SCRIPT_LOCATION":"/data/core/pentaho_jobs/monitor_scripts",
+    "DAX_SCRIPT_LOCATION":"/data/core/pentaho_jobs/decision_analytics",
+    "SALARY_TOOLBOX_LOCATION":"/data/core/salary_toolbox",
+    "SCORE_ENGINE_LOCATION":"/data/core/score_engine",
+    "MIGRATE_DB_SCRIPT_LOCATION":"/data/core/pentaho_jobs/migrate_db",
+    "BACKTRACK_SCRIPT_LOCATION":"/data/core/pentaho_jobs/back_track_accounts",
+    
+    "EMAIL_LIST":[
+        "sony.shrestha@extensodata.com"
+    ],
+
+    "CRON_EXPRESSION_DA":"0 9 * * *",
+    "CRON_EXPRESSION_DA_Production_Point":"0 11 * * *",
+    "CRON_EXPRESSION_DROP_BAD_CUST":"0 11-23/2 * * *",
+    
+    "START_DATE":{
+        "year":2020,
+        "month":10,
+        "day":10,
+        "hour":0,
+        "minute":0,
+        "second":0
+
+    },
+    
+    "connection":{
+        "mysql": {
+            "drivername":"mysql",
+            "host":"10.13.189.55",
+            "username":"sony",
+            "password":"Extenso&123"
+        },
+
+        "oracle":{
+            "drivername": "oracle+cx_oracle",
+            "host": "10.13.189.56",
+            "username": "FONECREDIT",
+            "password": "oracle",
+            "port": "1521",
+            "sid_name": "XE"
+        },
+        "sql": {
+            "host":"10.13.189.56",
+            "username":"sa",
+            "password":"extenso@123",
+            "sql_raw_db_name":"sample_db"
+        }
+    },
+    
+       "master_db_name":"xdax_fc_master_data",
+       "fc_master_db_name":"xdax_fc_master",
+       "raw_db_name":"xdax_raw",
+       "processing_db_name":"xdax_facts",
+       "app_db_name":"fone_credit_f1",
+       "previous_db_name":"fonecredit_score_previous",
+       "history_db_name":"fonecredit_score_history",
+       "foneloan_db_name":"foneloan",
+       "fc_monitor_db_name":"xdax_monitor",
+       "report_password":"Extensobi_report",
+       "password":"aayush"
+}
+    
+    
+    
